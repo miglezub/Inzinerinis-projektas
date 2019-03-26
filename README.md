@@ -1,2 +1,2 @@
-# In-inerinis-projektas
-Inžinerinio projekto wiki
+# Inzinerinis-projektas
+Inzinerinio projekto wiki
