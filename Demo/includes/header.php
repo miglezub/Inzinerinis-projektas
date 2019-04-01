@@ -34,10 +34,10 @@ else {
   		</div>
 
   		<nav>
-  			<a href="#">
+  			<a href="<?php echo $userLoggedIn; ?>">
   				<?php echo $user['first_name']; ?>
   			</a>
-  			<a href="#">
+  			<a href="index.php">
   				<i class="fas fa-home fa-lg"></i>
   			</a>
   			<a href="#">
@@ -52,8 +52,11 @@ else {
   			<a href="#">
   				<i class="fas fa-cog fa-lg"></i>
   			</a>
-  			<a href="#">
+  			<a href="includes/handlers/logout.php">
   			<i class="fas fa-door-open fa-lg"></i>
   			</a>
   		</nav>
   	</div>
+
+  	<div class="wrapper">
+  		
