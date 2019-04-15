@@ -1,12 +1,15 @@
-<?php 
+<?php
+
 include("includes/header.php");
-//session_destroy(); //destroys all session variables
- ?>
+//session_destroy();
+?>
 
-    <div class="main_column column">
-    	This is a profile page
-    </div>
 
-  </div> <!-- closes wrapper in header.php -->
-  </body>
+
+<div class="main_column column">
+	This is a profile page!
+</div>
+</div>
+</body>
 </html>
+

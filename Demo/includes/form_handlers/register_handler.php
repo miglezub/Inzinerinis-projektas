@@ -138,6 +138,7 @@ if(isset($_POST['register_button'])) //jeigu input register_button paspaudziamas
 
 
 		$hash=md5( rand(0,1000));//random 32 character hash to be used for email verification
+		$pass_hash=md5( rand(0,1000));
 		$query=mysqli_query($con, "INSERT INTO users VALUES ('','$fname', '$lname', '$username', '$email_low_case', '$password', '$date', '$profile_pic', '0', '0', 'no', ',', '$hash', '0')");
 		array_push($error_array, "<span style='color: #14C800;'>Registration successful, verification email has been sent!</span><br>");
 
