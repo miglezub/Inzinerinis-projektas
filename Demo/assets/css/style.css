@@ -99,7 +99,7 @@ nav a:hover {
 
 .main_column {
 	float: right;
-	width: 75%;
+	width: 81%;
 	z-index: -1;
 	min-height: 160px;
 }
@@ -231,3 +231,4 @@ textarea:focus {
 	display: inline;
 	font-size: 14px;
 }
+

@@ -2,18 +2,22 @@
 <html>
 <head>
 	<title>Verification</title>
-	<link href="css/style.css" type="text/css" rel="stylesheet" />
+	
+     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/reset_password.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body>
 	<!-- start header div --> 
     <div id="header">
-        <h3>Studentbook >> Sign up</h3>
+        
     </div>
     <!-- end header div -->   
      
     <!-- start wrap div -->   
-    <div id="wrap">
+    <div id="reset_box">
         <!-- start PHP code -->
+        <h3>Verification:</h3>
         <?php
          	require 'config/config.php';
             mysqli_select_db($con, "social") or die(mysqli_error($con)); // Select database.    

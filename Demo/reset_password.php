@@ -36,15 +36,30 @@ if(isset($_POST['res_button']))
 <html>
 <head>
 	<title>RESET PASSWORD >> Studentbook</title>
+	 <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/reset_password.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body>
-
-<form action="reset_password.php" method="POST">
+<div id="reset_box">
+	<b>Enter your email to reset your password</b>
+<form id="reset_password" action="reset_password.php" method="POST">
 	
 	<input type="email" name="res_email" placeholder="Enter email">
 	<input type="submit" name="res_button" value="Submit link">
 
 </form>
+	<?php
+					if(in_array("Reset link has been sent to your email", $error_array))
+					{
+						echo "Reset link has been sent to your email";
+					}
+					if(in_array("Email doesn't exist!", $error_array))
+					{
+						echo "Email doesn't exist!";
+					}
+					?>
+</div>
 
 </body>
 </html>
