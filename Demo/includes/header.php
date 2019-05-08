@@ -1,6 +1,8 @@
 <?php
  
  require 'config/config.php';
+ include("includes/classes/User.php");
+ include("includes/classes/Post.php");
 
 if (isset($_SESSION['username']))
 {
@@ -15,7 +17,6 @@ else {
 }
 ?>
 
-<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -27,10 +28,15 @@ else {
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
   crossorigin="anonymous"></script>
   <script type="text/javascript" src="assets/js/bootstrap.js"></script>
-
+  <script type="text/javascript" src="assets/js/demo.js"></script>
+  <script type="text/javascript" src="assets/js/bootbox.js"></script>
+  <script type="text/javascript" src="assets/js/jcrop_bits.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.jcrop.js"></script>
+  
   <!-- css -->
   <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/jquery.Jcrop.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   </head>
   <body>
@@ -45,7 +51,7 @@ else {
   			<a href="index.php"><i class="fas fa-home fa-lg"></i></a>
   			<a href="#"><i class="fas fa-envelope fa-lg"></i></a>
   			<a href="#"><i class="fas fa-bell fa-lg"></i></a>
-  			<a href="#"><i class="fas fa-users fa-lg"></i></a>
+  			<a href="requests.php"><i class="fas fa-users fa-lg"></i></a>
   			<a href="#"><i class="fas fa-cog fa-lg"></i></a>
   			<a href="includes/handlers/logout.php"><i class="fas fa-sign-out-alt fa-lg"></i></i></a>
 
