@@ -253,7 +253,7 @@ textarea:focus {
 
 #message_submit {
 	height: 54px;
-	width: 155px;
+	width: 140px;
 	margin: 0;
 	position: absolute;
 	border: none;
@@ -347,4 +347,56 @@ textarea:focus {
 .liveSearchText p{
 	margin-left: 10px;
 	font-size: 12px;
+}
+
+.tab-content {
+	margin-top: 25px;
+}
+
+.dropdown_data_window {
+	height: 280px;
+	padding: 0px;
+	background-color: #fff;
+	border: 1px solid #DADADA;
+	border-radius: 0 0 8px 8px;
+	border-top: none;
+	width: 300px;
+	position: absolute;
+	right: 10px;
+	top: 60px;
+	overflow: auto;
+}
+
+.notification_badge {
+	padding: 3px 7px;
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 1;
+	color: #fff;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;
+	background-color: #0027ff;
+	border-radius: 10px;
+	position: absolute;
+	left: 15px;
+	top: -3px;
+}
+
+.resultDisplayNotification {
+	height: auto;
+	color: #1485BD;
+	padding: 5px;
+}
+
+.resultDisplayNotification img {
+	height: 40px;
+	border-radius: 5px;
+	margin: 1px 12px 0px 2px;
+	float: left;
+}
+
+.timestamp_smaller {
+	font-size: 85%;
+	margin: 0;
 }
