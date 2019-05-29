@@ -99,3 +99,111 @@
 	margin: 10px 0 0 28px;
 	color: #fff;
 }
+
+.search {
+	margin: 15px 0 0 15%;
+}
+
+.search #search_text_input {
+	border: thin solid #DADADA;
+	float: left;
+	height: 28px;
+	color: #504a4a;
+	outline: 0;
+	width: 150px;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.button_holder {
+	width: 28px;
+	height: 28px;
+	background-color: #e8e8e8;
+	border: thin solid #DADADA;
+	cursor: pointer;
+	float: left;
+	text-align: center;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+.button_holder img{
+	width: 26px;
+	height: 26px;
+	cursor: pointer;
+}
+
+.search_results {
+	background-color: #fff;
+	border: 1px solid #DADADA;
+	border-bottom: none;
+	border-top: none;
+	margin-top: 21px;
+}
+
+.search_results_footer {
+	padding: 1px 4px 0px 4px;
+	height: 28px;
+	border: 1px solid #DADADA;
+	border-top: none;
+	background-color: #e67e22;
+	text-align: center;
+}
+
+.search_results_footer a {
+	color: #fff;
+}
+
+.resultDisplay85 {
+	padding: 5px 5px 0 5px;
+	height: 85px;
+	border-bottom: 1px solid #D3D3D3;
+}
+
+.search_result {
+	padding: 10px;
+	height: 110px;
+}
+
+.searchPageFriendButtons {
+	float: right;
+}
+
+.result_profile_pic {
+	float: left;
+	margin-right: 10px;
+}
+
+#search_hr {
+	margin-bottom: 0;
+}
+
+.searchPageFriendButtons input[type="submit"] {
+	border: none;
+	padding: 7px 12px;
+	border-radius: 5px;
+	color: #fff;
+}
+
+.small_profile_pic {
+	height: 110px;
+	margin: 1px 12px 0 2px;
+	float:left;
+}
+
+#settings_input {
+	border: 1px solid #DADADA;
+	height: 25px;
+	padding: 4px 6px;
+	margin-bottom: 10px;
+	border-radius: 4px;
+	font-size: 14px;
+	line-height: 25px;
+}
+
+.settings_submit {
+	border: none;
+	padding: 7px 12px;
+	border-radius: 5px;
+	color: #fff;
+}

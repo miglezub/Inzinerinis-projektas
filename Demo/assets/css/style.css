@@ -76,6 +76,7 @@ nav a:hover {
 	border-radius: 5px;
 	box-shadow: 2px 2px 1px #a4968980;
 	z-index: -1;
+	color: #555;
 }
 
 .user_details {

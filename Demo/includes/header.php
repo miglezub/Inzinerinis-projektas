@@ -38,15 +38,37 @@ else {
   <!-- css -->
   <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/profile_style.css">
   <link rel="stylesheet" type="text/css" href="assets/css/jquery.Jcrop.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   </head>
   <body>
 
   	<div class="top_bar">
+
   		<div class="logo">
   			<a href="index.php">StudentBook</a>
   		</div>
+
+      <div class="search">
+        <form action="search.php" method="GET" name="search_form">
+          <input type="text" onkeyup="getLiveSearchUsers(this.value, '<?php echo $userLoggedIn ?>')" name="q" placeholder="Search..." autocomplete="off" id="search_text_input">
+
+          <div class="button_holder">
+            <img src="assets/images/icons/magnifying_glass.png">
+          </div>
+
+        </form>
+
+        <div class="search_results">
+          
+        </div>
+
+        <div class="search_results_footer_empty">
+          
+        </div>
+
+      </div>
 
   		<nav>
   			<?php
@@ -88,7 +110,7 @@ else {
               echo '<span class="notification_badge" id="unread_requests">' . $num_requests . '</span>';
             ?>
         </a>
-  			<a href="#">
+  			<a href="settings.php">
           <i class="fas fa-cog fa-lg"></i>
         </a>
   			<a href="includes/handlers/logout.php">
